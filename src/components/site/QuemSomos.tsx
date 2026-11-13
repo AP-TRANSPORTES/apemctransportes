@@ -1,5 +1,5 @@
 import { ShieldCheck, HeartHandshake, BadgeCheck, Target } from "lucide-react";
-import deposito from "@/assets/deposito-vasilhames.jpg";
+import equipeReuniao from "@/assets/equipe-reuniao.jpeg.asset.json";
 import { TituloSecao } from "./Secao";
 
 const VALORES = [
@@ -14,10 +14,10 @@ export function QuemSomos() {
     <section id="quem-somos" className="section-pad bg-secondary">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2 lg:gap-16">
         <img
-          src={deposito}
-          alt="Colaborador inspecionando botijões de GLP no depósito"
-          width={1200}
-          height={912}
+          src={equipeReuniao.url}
+          alt="Equipe do grupo reunida no escritório"
+          width={1280}
+          height={960}
           loading="lazy"
           className="aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
         />

@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Send } from "lucide-react";
-import equipe from "@/assets/equipe.jpg";
+import equipe from "@/assets/equipe-confraternizacao.jpeg.asset.json";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -32,12 +32,12 @@ export function TrabalheConosco() {
             descricao="Envie seu nome, telefone e a função desejada. Respondemos pelo WhatsApp."
           />
           <img
-            src={equipe}
-            alt="Equipe de motoristas e colaboradores em frente a um caminhão"
-            width={1200}
-            height={912}
+            src={equipe.url}
+            alt="Colaboradores do grupo reunidos em uma confraternização da equipe"
+            width={1280}
+            height={720}
             loading="lazy"
-            className="mt-8 aspect-[4/3] w-full rounded-2xl object-cover shadow-card"
+            className="mt-8 aspect-video w-full rounded-2xl object-contain shadow-card"
           />
         </div>
         <form onSubmit={enviar} className="self-start rounded-2xl border border-border bg-card p-6 shadow-card md:p-8">

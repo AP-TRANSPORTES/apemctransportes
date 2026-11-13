@@ -33,3 +33,4 @@ use the editor.
 - Company facts (phone, WhatsApp, CNPJ, ANP, email, hours, leadership) live only in `src/lib/empresa.ts`; null fields are hidden in the UI so nothing invented is shown.
 - The landing page is composed of section components in `src/components/site/`; `src/routes/index.tsx` only orders them.
 - Logos are CDN assets (pointers in `src/assets/*.asset.json`); their URLs are mirrored in `src/lib/logos.ts`.
+- Uploaded team photos use CDN asset pointers and retain their original aspect ratios so people are not cropped out.
