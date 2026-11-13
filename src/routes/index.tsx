@@ -1,23 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Servicos } from "@/components/site/Servicos";
+import { QuemSomos } from "@/components/site/QuemSomos";
+import { Empresas } from "@/components/site/Empresas";
+import { Seguranca } from "@/components/site/Seguranca";
+import { OndeEstamos } from "@/components/site/OndeEstamos";
+import { TrabalheConosco } from "@/components/site/TrabalheConosco";
+import { Contato } from "@/components/site/Contato";
+import { BotaoWhatsApp, Gratidao, Rodape } from "@/components/site/Rodape";
 
-// The home route ships no og:image, so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const TITULO = "AP • MC • VP • Elizabete | Transporte e logística de GLP em AL e PE";
+const DESCRICAO =
+  "AP, MC, VP e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas e Pernambuco.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITULO },
+      { name: "description", content: DESCRICAO },
+      { property: "og:title", content: TITULO },
+      { property: "og:description", content: DESCRICAO },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Servicos />
+        <QuemSomos />
+        <Empresas />
+        <Seguranca />
+        <OndeEstamos />
+        <Contato />
+        <TrabalheConosco />
+        <Gratidao />
+      </main>
+      <Rodape />
+      <BotaoWhatsApp />
+    </>
   );
 }
