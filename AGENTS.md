@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Company facts (phone, WhatsApp, CNPJ, ANP, email, hours, leadership) live only in `src/lib/empresa.ts`; null fields are hidden in the UI so nothing invented is shown.
+- The landing page is composed of section components in `src/components/site/`; `src/routes/index.tsx` only orders them.
+- Logos are CDN assets (pointers in `src/assets/*.asset.json`); their URLs are mirrored in `src/lib/logos.ts`.
