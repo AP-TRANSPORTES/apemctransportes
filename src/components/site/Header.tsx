@@ -38,7 +38,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-18">
         <Marca />
         <nav className="hidden items-center gap-6 lg:flex">
-          {LINKS.slice(0, 5).concat(LINKS.slice(6)).map((l) => (
+          {LINKS.filter((l) => l.href !== "#inicio" && l.href !== "#trabalhe-conosco").map((l) => (
             <a
               key={l.href}
               href={l.href}
