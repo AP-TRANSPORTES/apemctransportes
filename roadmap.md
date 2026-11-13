@@ -1,6 +1,7 @@
 # Roadmap
 
-- [ ] Publicar o site e entregar o link público — bloqueado: a confirmação de publicação foi cancelada 4 vezes por mensagem nova; o usuário precisa confirmar o cartão ou clicar em Publicar
+- [x] Publicar o site — publicado com o endereço apemctransportes.lovable.app
+- [ ] Conferir se o endereço publicado abre normalmente
 - [ ] Conectar endereço próprio (.com.br) — bloqueado: o plano gratuito não permite domínio próprio
 - [ ] Trocar as fotos ilustrativas por fotos reais (caminhão, equipe, depósito)
 - [ ] Confirmar se (82) 99999-2245 é o telefone real
