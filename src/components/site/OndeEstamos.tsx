@@ -27,7 +27,7 @@ export function OndeEstamos() {
         <TituloSecao
           eyebrow="Onde estamos"
           titulo="Duas bases: Maceió (AL) e Vicência (PE)."
-          descricao="Daqui apoiamos a movimentação de GLP em Alagoas e Pernambuco."
+          descricao="Daqui apoiamos a movimentação de GLP em Alagoas, Pernambuco e Paraíba."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
           {BASES.map((b) => (
