@@ -15,6 +15,7 @@ const DESCRICAO =
   "AP, MC, VP e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas, Pernambuco e Paraíba.";
 
 export const Route = createFileRoute("/")({
+  staticData: { sitemap: true },
   head: () => ({
     meta: [
       { title: TITULO },

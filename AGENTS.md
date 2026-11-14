@@ -34,3 +34,5 @@ use the editor.
 - The landing page is composed of section components in `src/components/site/`; `src/routes/index.tsx` only orders them.
 - Logos are CDN assets (pointers in `src/assets/*.asset.json`); their URLs are mirrored in `src/lib/logos.ts`.
 - Uploaded team photos use CDN asset pointers and retain their original aspect ratios so people are not cropped out.
+- The sitemap is router-derived (`src/lib/sitemap.ts` + `src/routes/sitemap[.]xml.ts`); every route must set `staticData.sitemap` so new pages are listed or excluded explicitly.
+- Google Search Console is verified by the HTML file in `public/google*.html`; never delete it or Google loses the site.
