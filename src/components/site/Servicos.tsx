@@ -18,7 +18,7 @@ const SERVICOS = [
     icone: Truck,
     titulo: "Distribuição de GLP",
     texto: "Entrega a revendas e parceiros com rotas planejadas e atenção aos prazos.",
-    itens: ["Rotas em AL e PE", "Cumprimento de horários", "Veículos sinalizados"],
+    itens: ["Rotas em AL, PE e PB", "Cumprimento de horários", "Veículos sinalizados"],
   },
   {
     icone: Warehouse,

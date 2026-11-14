@@ -6,7 +6,7 @@ import { LOGOS } from "@/lib/logos";
 const NUMEROS = [
   { valor: "4", rotulo: "empresas integradas" },
   { valor: "2", rotulo: "bases operacionais" },
-  { valor: "AL e PE", rotulo: "estados atendidos" },
+  { valor: "AL, PE e PB", rotulo: "estados atendidos" },
   { valor: "4", rotulo: "serviços em GLP" },
 ];
 
@@ -17,7 +17,7 @@ export function Hero() {
         <div>
           <p className="eyebrow">Logística • Transporte • Distribuição</p>
           <h1 className="mt-4 text-[2.4rem] font-extrabold leading-[1.02] md:text-6xl">
-            Transporte e logística de <span className="text-primary">GLP</span> em Alagoas e Pernambuco.
+            Transporte e logística de <span className="text-primary">GLP</span> em Alagoas, Pernambuco e Paraíba.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-navy-muted md:text-lg">
             Destroca e qualificação de vasilhames, distribuição e transferência de GLP — com segurança,

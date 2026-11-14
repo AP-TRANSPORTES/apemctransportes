@@ -37,7 +37,7 @@ export function Empresas() {
         <TituloSecao
           eyebrow="Nossas empresas"
           titulo="Quatro nomes, uma operação integrada."
-          descricao="Marcas que trabalham juntas para levar GLP com segurança a Alagoas e Pernambuco."
+          descricao="Marcas que trabalham juntas para levar GLP com segurança a Alagoas, Pernambuco e Paraíba."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {EMPRESAS.map((e) => (

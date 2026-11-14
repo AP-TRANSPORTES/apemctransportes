@@ -10,9 +10,9 @@ import { TrabalheConosco } from "@/components/site/TrabalheConosco";
 import { Contato } from "@/components/site/Contato";
 import { BotaoWhatsApp, Gratidao, Rodape } from "@/components/site/Rodape";
 
-const TITULO = "AP • MC • VP • Elizabete | Transporte e logística de GLP em AL e PE";
+const TITULO = "AP • MC • VP • Elizabete | Transporte e logística de GLP em Alagoas, Pernambuco e Paraíba";
 const DESCRICAO =
-  "AP, MC, VP e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas e Pernambuco.";
+  "AP, MC, VP e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas, Pernambuco e Paraíba.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

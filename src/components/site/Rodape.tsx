@@ -28,7 +28,7 @@ export function Rodape() {
           <div>
             <p className="font-display font-extrabold">{EMPRESA.nomes.join(" • ")}</p>
             <p className="text-xs text-navy-muted">
-              Transporte e logística de GLP • Alagoas e Pernambuco
+              Transporte e logística de GLP • Alagoas, Pernambuco e Paraíba
               {EMPRESA.cnpj ? ` • CNPJ ${EMPRESA.cnpj}` : ""}
             </p>
           </div>
