@@ -11,7 +11,7 @@ const ATENDIDOS = {
 } as const;
 
 const BASES = [
-  { id: "maceio", nome: "Maceió", lado: "esquerda" },
+  { id: "maceio", nome: "Maceió", lado: "direita" },
   { id: "vicencia", nome: "Vicência", lado: "direita" },
 ] as const;
 
@@ -77,7 +77,7 @@ function MapaZoom() {
               x={x + dx}
               y={y + 5}
               textAnchor={lado === "esquerda" ? "end" : "start"}
-              className="fill-navy-deep text-[16px] font-bold"
+              className="fill-navy-deep text-[18px] font-bold"
               paintOrder="stroke"
               stroke="var(--card)"
               strokeWidth={4}
