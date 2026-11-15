@@ -8,5 +8,9 @@
 - [ ] Trocar a foto ilustrativa do caminhão por foto real — aguardando o usuário
 - [ ] Adicionar mais um número de contato depois (aguardando o usuário)
 - [ ] Conectar endereço próprio (.com.br) — bloqueado: o plano gratuito não permite domínio próprio
-- [ ] Adicionar CNPJ, nº de autorização ANP, e-mail e horário (campos ficam ocultos até o usuário informar)
+- [x] Mapa de abrangência com AL, PE e PB
+- [x] E-mail de contato transportadoramct@gmail.com
+- [x] Crédito discreto "Site criado por Rhuan Marcos" no rodapé
+- [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos da equipe e título)
+- [ ] Adicionar CNPJ, nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente
