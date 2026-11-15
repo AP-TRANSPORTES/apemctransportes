@@ -5,6 +5,7 @@ import { Servicos } from "@/components/site/Servicos";
 import { QuemSomos } from "@/components/site/QuemSomos";
 import { Empresas } from "@/components/site/Empresas";
 import { Seguranca } from "@/components/site/Seguranca";
+import { Abrangencia } from "@/components/site/Abrangencia";
 import { OndeEstamos } from "@/components/site/OndeEstamos";
 import { TrabalheConosco } from "@/components/site/TrabalheConosco";
 import { Contato } from "@/components/site/Contato";
@@ -39,6 +40,7 @@ function Index() {
         <QuemSomos />
         <Empresas />
         <Seguranca />
+        <Abrangencia />
         <OndeEstamos />
         <Contato />
         <TrabalheConosco />

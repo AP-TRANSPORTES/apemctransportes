@@ -10,6 +10,7 @@ const LINKS = [
   { href: "#servicos", label: "Serviços" },
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#empresas", label: "Empresas" },
+  { href: "#abrangencia", label: "Abrangência" },
   { href: "#onde-estamos", label: "Onde estamos" },
   { href: "#trabalhe-conosco", label: "Trabalhe conosco" },
   { href: "#contato", label: "Contato" },
