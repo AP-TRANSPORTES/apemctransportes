@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { EMPRESA, linkWhatsApp } from "@/lib/empresa";
 import { LOGOS } from "@/lib/logos";
 
@@ -33,7 +33,26 @@ export function Rodape() {
             </p>
           </div>
         </div>
-        <p className="text-xs text-navy-muted">© {new Date().getFullYear()} Todos os direitos reservados.</p>
+        <ul className="space-y-2 text-sm font-semibold">
+          <li>
+            <a href={linkWhatsApp()} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-primary">
+              <MessageCircle className="size-5 text-primary" /> {EMPRESA.telefoneExibicao}
+            </a>
+          </li>
+          {EMPRESA.email && (
+            <li>
+              <a href={`mailto:${EMPRESA.email}`} className="flex items-center gap-3 break-all hover:text-primary">
+                <Mail className="size-5 shrink-0 text-primary" /> {EMPRESA.email}
+              </a>
+            </li>
+          )}
+        </ul>
+      </div>
+      <div className="border-t border-navy-foreground/10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4 text-xs text-navy-muted sm:flex-row sm:justify-between">
+          <p>© {new Date().getFullYear()} Todos os direitos reservados.</p>
+          <p className="opacity-70">Site criado por {EMPRESA.criadorSite}</p>
+        </div>
       </div>
     </footer>
   );

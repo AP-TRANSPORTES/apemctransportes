@@ -41,7 +41,11 @@ export function Contato() {
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wider text-navy-muted">{rotulo}</p>
                   {href ? (
-                    <a href={href} target="_blank" rel="noreferrer" className="font-semibold hover:text-primary">
+                    <a
+                      href={href}
+                      {...(href.startsWith("http") ? { target: "_blank", rel: "noreferrer" } : {})}
+                      className="break-all font-semibold hover:text-primary"
+                    >
                       {valor}
                     </a>
                   ) : (

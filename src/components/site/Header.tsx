@@ -10,6 +10,7 @@ const LINKS = [
   { href: "#servicos", label: "Serviços" },
   { href: "#quem-somos", label: "Quem somos" },
   { href: "#empresas", label: "Empresas" },
+  { href: "#abrangencia", label: "Abrangência" },
   { href: "#onde-estamos", label: "Onde estamos" },
   { href: "#trabalhe-conosco", label: "Trabalhe conosco" },
   { href: "#contato", label: "Contato" },
@@ -37,12 +38,12 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-card/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:h-18">
         <Marca />
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-6 xl:flex">
           {LINKS.filter((l) => l.href !== "#inicio" && l.href !== "#trabalhe-conosco").map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-xs font-bold uppercase tracking-wider text-foreground/80 transition-colors hover:text-primary"
+              className="whitespace-nowrap text-xs font-bold uppercase tracking-wider text-foreground/80 transition-colors hover:text-primary"
             >
               {l.label}
             </a>
@@ -56,7 +57,7 @@ export function Header() {
           </Button>
           <Sheet open={aberto} onOpenChange={setAberto}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Abrir menu">
+              <Button variant="ghost" size="icon" className="xl:hidden" aria-label="Abrir menu">
                 <Menu className="!size-6" />
               </Button>
             </SheetTrigger>

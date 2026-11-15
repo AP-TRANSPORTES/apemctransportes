@@ -5,10 +5,11 @@ export const EMPRESA = {
   direcao: "Maria Cristina e Antonio Pereira",
   whatsapp: "5582999992245",
   telefoneExibicao: "(82) 99999-2245",
-  email: null as string | null,
+  email: "transportadoramct@gmail.com" as string | null,
   horario: null as string | null,
   cnpj: null as string | null,
   autorizacaoAnp: null as string | null,
+  criadorSite: "Rhuan Marcos",
   razaoSocial: "Transportadora A. P. A P de Souza Transportes LTDA",
 };
 
