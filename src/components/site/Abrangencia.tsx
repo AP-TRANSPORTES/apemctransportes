@@ -10,9 +10,10 @@ const ATENDIDOS = {
   PB: { nome: "Paraíba", detalhe: "Atendimento a partir das bases", cor: "color-mix(in oklab, var(--primary) 70%, var(--primary-foreground))" },
 } as const;
 
+// Os nomes ficam à direita do ponto, sobre o mar, para não cobrir o nome dos estados.
 const BASES = [
-  { id: "maceio", nome: "Maceió", lado: "direita" },
-  { id: "vicencia", nome: "Vicência", lado: "direita" },
+  { id: "maceio", nome: "Maceió" },
+  { id: "vicencia", nome: "Vicência" },
 ] as const;
 
 function MapaZoom() {
@@ -53,7 +54,9 @@ function MapaZoom() {
         />
       ))}
       {(Object.keys(ATENDIDOS) as (keyof typeof ATENDIDOS)[]).map((sigla) => {
-        const [x, y] = ROTULOS[sigla];
+        const rotulo = ROTULOS[sigla];
+        if (!rotulo) return null;
+        const [x, y] = rotulo;
         return (
           <text
             key={sigla}
@@ -66,17 +69,17 @@ function MapaZoom() {
           </text>
         );
       })}
-      {BASES.map(({ id, nome, lado }) => {
-        const [x, y] = PINOS[id];
-        const dx = lado === "esquerda" ? -14 : 14;
+      {BASES.map(({ id, nome }) => {
+        const pino = PINOS[id];
+        if (!pino) return null;
+        const [x, y] = pino;
         return (
           <g key={id}>
             <circle cx={x} cy={y} r={14} className="fill-navy" opacity={0.18} />
             <circle cx={x} cy={y} r={6.5} className="fill-navy stroke-card" strokeWidth={2.5} />
             <text
-              x={x + dx}
+              x={x + 14}
               y={y + 5}
-              textAnchor={lado === "esquerda" ? "end" : "start"}
               className="fill-navy-deep text-[18px] font-bold"
               paintOrder="stroke"
               stroke="var(--card)"
