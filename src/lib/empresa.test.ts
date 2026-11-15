@@ -6,6 +6,14 @@ describe("contato via WhatsApp", () => {
     expect(linkWhatsApp()).toBe("https://wa.me/5582999992245");
   });
 
+  it("o e-mail de contato é transportadoramct@gmail.com", () => {
+    expect(EMPRESA.email).toBe("transportadoramct@gmail.com");
+  });
+
+  it("o crédito do site vai para Rhuan Marcos", () => {
+    expect(EMPRESA.criadorSite).toBe("Rhuan Marcos");
+  });
+
   it("o site cita as quatro empresas, incluindo a VP", () => {
     expect(EMPRESA.nomes).toContain("VP Transportes");
     expect(EMPRESA.marcaCurta).toContain("VP");

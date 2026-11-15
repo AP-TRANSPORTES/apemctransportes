@@ -9,6 +9,7 @@ export const EMPRESA = {
   horario: null as string | null,
   cnpj: null as string | null,
   autorizacaoAnp: null as string | null,
+  criadorSite: "Rhuan Marcos",
   razaoSocial: "Transportadora A. P. A P de Souza Transportes LTDA",
 };
 
