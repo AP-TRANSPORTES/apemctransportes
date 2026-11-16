@@ -18,6 +18,13 @@ const BASES = [
     cep: "CEP 55850-000",
     busca: "Rua Antonio de Oliveira Mota, 09/A, Centro, Vicência, PE, 55850-000",
   },
+  {
+    empresa: "Base Paraíba",
+    cidade: "Campina Grande • Paraíba",
+    endereco: "Avenida Deputado Raimundo Asfora, 1000 — Sala 10, Velame",
+    cep: "CEP 58420-000",
+    busca: "Avenida Deputado Raimundo Asfora, 1000, Velame, Campina Grande, PB, 58420-000",
+  },
 ];
 
 export function OndeEstamos() {
@@ -26,10 +33,10 @@ export function OndeEstamos() {
       <div className="mx-auto max-w-6xl px-4">
         <TituloSecao
           eyebrow="Onde estamos"
-          titulo="Duas bases: Maceió (AL) e Vicência (PE)."
+          titulo="Três bases: Maceió (AL), Vicência (PE) e Campina Grande (PB)."
           descricao="Daqui apoiamos a movimentação de GLP em Alagoas, Pernambuco e Paraíba."
         />
-        <div className="mt-10 grid gap-4 md:grid-cols-2">
+        <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {BASES.map((b) => (
             <article key={b.empresa} className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-card">
               <div className="flex items-start gap-4">

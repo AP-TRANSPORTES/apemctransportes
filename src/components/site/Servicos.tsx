@@ -24,7 +24,7 @@ const SERVICOS = [
     icone: Warehouse,
     titulo: "Transferência",
     texto: "Movimentação de cargas e vasilhames entre bases, depósitos e distribuidoras.",
-    itens: ["Entre Maceió e Vicência", "Cargas cheias e vazias", "Comunicação direta"],
+    itens: ["Entre as bases de AL, PE e PB", "Cargas cheias e vazias", "Comunicação direta"],
   },
 ];
 

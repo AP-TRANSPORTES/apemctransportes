@@ -7,13 +7,14 @@ import { TituloSecao } from "./Secao";
 const ATENDIDOS = {
   PE: { nome: "Pernambuco", detalhe: "Base da AP em Vicência", cor: "var(--primary)" },
   AL: { nome: "Alagoas", detalhe: "Base da MC em Maceió", cor: "color-mix(in oklab, var(--primary) 78%, var(--navy-deep))" },
-  PB: { nome: "Paraíba", detalhe: "Atendimento a partir das bases", cor: "color-mix(in oklab, var(--primary) 70%, var(--primary-foreground))" },
+  PB: { nome: "Paraíba", detalhe: "Base em Campina Grande", cor: "color-mix(in oklab, var(--primary) 70%, var(--primary-foreground))" },
 } as const;
 
 // Os nomes ficam à direita do ponto, sobre o mar, para não cobrir o nome dos estados.
 const BASES = [
   { id: "maceio", nome: "Maceió" },
   { id: "vicencia", nome: "Vicência" },
+  { id: "campina-grande", nome: "Campina Grande" },
 ] as const;
 
 function MapaZoom() {
@@ -120,7 +121,7 @@ export function Abrangencia() {
           <TituloSecao
             eyebrow="Abrangência"
             titulo="Onde a nossa operação chega."
-            descricao="Com bases em Maceió (AL) e Vicência (PE), o grupo atende Alagoas, Pernambuco e Paraíba com transporte, destroca, qualificação de vasilhames, distribuição e transferência de GLP."
+            descricao="Com bases em Maceió (AL), Vicência (PE) e Campina Grande (PB), o grupo atende Alagoas, Pernambuco e Paraíba com transporte, destroca, qualificação de vasilhames, distribuição e transferência de GLP."
           />
           <ul className="mt-8 space-y-3">
             {(Object.keys(ATENDIDOS) as (keyof typeof ATENDIDOS)[]).map((sigla) => (
