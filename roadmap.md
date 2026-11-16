@@ -5,12 +5,13 @@
 - [x] Confirmar se (82) 99999-2245 é o telefone real — usuário confirmou que é verdadeiro
 - [x] Adicionar as duas fotos reais da equipe em Quem somos e Trabalhe conosco
 - [x] Corrigir o título para "Transporte e logística de GLP em Alagoas, Pernambuco e Paraíba"
-- [ ] Trocar a foto ilustrativa do caminhão por foto real — aguardando o usuário
+- [x] Trocar a foto ilustrativa do caminhão por foto real (sem placas)
+- [x] Base de Campina Grande (PB) em Onde estamos e no mapa
 - [ ] Adicionar mais um número de contato depois (aguardando o usuário)
 - [ ] Conectar endereço próprio (.com.br) — bloqueado: o plano gratuito não permite domínio próprio
 - [x] Mapa de abrangência com AL, PE e PB
 - [x] E-mail de contato transportadoramct@gmail.com
 - [x] Crédito discreto "Site criado por Rhuan Marcos" no rodapé
-- [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos da equipe e título)
+- [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos, título, base PB) — usuário publica pelo botão Publicar
 - [ ] Adicionar CNPJ, nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente

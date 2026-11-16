@@ -1,11 +1,11 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-caminhao-glp.jpg";
+import caminhao from "@/assets/caminhao-elizabete-glp.jpg.asset.json";
 import { LOGOS } from "@/lib/logos";
 
 const NUMEROS = [
   { valor: "4", rotulo: "empresas integradas" },
-  { valor: "2", rotulo: "bases operacionais" },
+  { valor: "3", rotulo: "bases operacionais" },
   { valor: "AL, PE e PB", rotulo: "estados atendidos" },
   { valor: "4", rotulo: "serviços em GLP" },
 ];
@@ -37,11 +37,11 @@ export function Hero() {
 
         <div className="relative">
           <img
-            src={heroImg}
-            alt="Caminhão carregado de botijões de GLP em pátio de distribuição"
-            width={1600}
-            height={1072}
-            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl"
+            src={caminhao.url}
+            alt="Caminhão vermelho da Elizabete Transportes carregado de botijões de GLP"
+            width={1280}
+            height={720}
+            className="aspect-video w-full rounded-2xl object-cover shadow-2xl"
           />
           <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-4 items-center gap-2 rounded-xl bg-card p-3 shadow-card sm:left-8 sm:right-8">
             {[
