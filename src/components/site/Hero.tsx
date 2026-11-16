@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import caminhao from "@/assets/caminhao-elizabete-glp.jpg.asset.json";
+import caminhao from "@/assets/caminhao-prata-glp.jpg.asset.json";
 import { LOGOS } from "@/lib/logos";
 
 const NUMEROS = [
@@ -38,10 +38,10 @@ export function Hero() {
         <div className="relative">
           <img
             src={caminhao.url}
-            alt="Caminhão vermelho da Elizabete Transportes carregado de botijões de GLP"
-            width={1280}
+            alt="Caminhão prateado do grupo carregado de botijões de GLP"
+            width={960}
             height={720}
-            className="aspect-video w-full rounded-2xl object-cover shadow-2xl"
+            className="aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl"
           />
           <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-4 items-center gap-2 rounded-xl bg-card p-3 shadow-card sm:left-8 sm:right-8">
             {[

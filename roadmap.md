@@ -12,6 +12,8 @@
 - [x] Mapa de abrangência com AL, PE e PB
 - [x] E-mail de contato transportadoramct@gmail.com
 - [x] Crédito discreto "Site criado por Rhuan Marcos" no rodapé
-- [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos, título, base PB) — usuário publica pelo botão Publicar
+- [x] Trocar foto do início pelo caminhão prateado (sem placas)
+- [x] Logos Copagaz, Copa Energia e Supergasbras ("Prestamos serviços para")
+- [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos, título, base PB, clientes) — usuário publica pelo botão Publicar
 - [ ] Adicionar CNPJ, nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente
