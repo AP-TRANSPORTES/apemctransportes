@@ -1,5 +1,5 @@
 import { MapPin } from "lucide-react";
-import { EMPRESA } from "@/lib/empresa";
+import { EMPRESA, cnpjDa } from "@/lib/empresa";
 import { LOGOS } from "@/lib/logos";
 import { TituloSecao } from "./Secao";
 
@@ -50,6 +50,9 @@ export function Empresas() {
                 <MapPin className="size-3.5" /> {e.base}
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{e.texto}</p>
+              {cnpjDa(e.nome) && (
+                <p className="mt-3 text-xs font-semibold text-foreground">CNPJ {cnpjDa(e.nome)}</p>
+              )}
             </article>
           ))}
         </div>

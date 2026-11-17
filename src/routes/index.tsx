@@ -15,6 +15,8 @@ import { BotaoWhatsApp, Gratidao, Rodape } from "@/components/site/Rodape";
 const TITULO = "AP • MC • VP • Elizabete | Transporte e logística de GLP em Alagoas, Pernambuco e Paraíba";
 const DESCRICAO =
   "AP, MC, VP e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas, Pernambuco e Paraíba.";
+// Prévia ao compartilhar o link (WhatsApp etc.): foto do caminhão prateado, sem placas, 1200x630.
+const IMAGEM_PREVIA = "https://apemctransportes.lovable.app/previa-caminhao-glp.jpg";
 
 export const Route = createFileRoute("/")({
   staticData: { sitemap: true },
@@ -25,7 +27,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITULO },
       { property: "og:description", content: DESCRICAO },
       { property: "og:type", content: "website" },
+      { property: "og:image", content: IMAGEM_PREVIA },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Caminhão prateado do grupo carregado de botijões de GLP" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: IMAGEM_PREVIA },
     ],
   }),
   component: Index,
