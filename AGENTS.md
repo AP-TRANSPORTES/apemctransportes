@@ -32,8 +32,8 @@ use the editor.
 ## Project rules
 - Company facts (phone, WhatsApp, CNPJ, ANP, email, hours, leadership) live only in `src/lib/empresa.ts`; null fields are hidden in the UI so nothing invented is shown.
 - The landing page is composed of section components in `src/components/site/`; `src/routes/index.tsx` only orders them.
-- Logos are CDN assets (pointers in `src/assets/*.asset.json`); their URLs are mirrored in `src/lib/logos.ts`.
-- Uploaded team photos use CDN asset pointers and retain their original aspect ratios so people are not cropped out.
+- Site images are real files in `src/assets/` imported through Vite (logos via `src/lib/logos.ts`), never `/__l5e/` CDN URLs or `.asset.json` pointers, because the site is also deployed on Vercel where Lovable's asset paths do not exist.
+- Uploaded team photos retain their original aspect ratios so people are not cropped out.
 - The sitemap is router-derived (`src/lib/sitemap.ts` + `src/routes/sitemap[.]xml.ts`); every route must set `staticData.sitemap` so new pages are listed or excluded explicitly.
 - Google Search Console is verified by the HTML file in `public/google*.html`; never delete it or Google loses the site.
 - The coverage map is a self-drawn SVG from public IBGE state outlines, pre-projected into `src/lib/mapa-abrangencia.ts`; it is decorative, so it needs no map service or API key.

@@ -1,5 +1,5 @@
 import { ShieldCheck, HeartHandshake, BadgeCheck, Target } from "lucide-react";
-import equipeReuniao from "@/assets/equipe-reuniao.jpeg.asset.json";
+import equipeReuniao from "@/assets/equipe-reuniao.jpeg";
 import { TituloSecao } from "./Secao";
 
 const VALORES = [
@@ -14,7 +14,7 @@ export function QuemSomos() {
     <section id="quem-somos" className="section-pad bg-secondary">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2 lg:gap-16">
         <img
-          src={equipeReuniao.url}
+          src={equipeReuniao}
           alt="Equipe do grupo reunida no escritório"
           width={1280}
           height={960}
