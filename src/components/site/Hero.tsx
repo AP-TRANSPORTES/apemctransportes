@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import caminhao from "@/assets/caminhao-prata-glp.jpg.asset.json";
+import caminhao from "@/assets/caminhao-prata-glp.jpg";
 import { LOGOS } from "@/lib/logos";
 
 const NUMEROS = [
@@ -37,7 +37,7 @@ export function Hero() {
 
         <div className="relative">
           <img
-            src={caminhao.url}
+            src={caminhao}
             alt="Caminhão prateado do grupo carregado de botijões de GLP"
             width={960}
             height={720}

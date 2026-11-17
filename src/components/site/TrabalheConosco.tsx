@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { Send } from "lucide-react";
-import equipe from "@/assets/equipe-confraternizacao.jpeg.asset.json";
+import equipe from "@/assets/equipe-confraternizacao.jpeg";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -32,7 +32,7 @@ export function TrabalheConosco() {
             descricao="Envie seu nome, telefone e a função desejada. Respondemos pelo WhatsApp."
           />
           <img
-            src={equipe.url}
+            src={equipe}
             alt="Colaboradores do grupo reunidos em uma confraternização da equipe"
             width={1280}
             height={720}
