@@ -11,7 +11,7 @@ const PRATICAS = [
 
 export function Seguranca() {
   const dados = [
-    EMPRESA.cnpj && { rotulo: "CNPJ", valor: EMPRESA.cnpj },
+    ...EMPRESA.cnpjs.map((c) => ({ rotulo: `CNPJ ${c.razaoSocial ?? c.empresa}`, valor: c.cnpj })),
     EMPRESA.autorizacaoAnp && { rotulo: "Autorização ANP", valor: EMPRESA.autorizacaoAnp },
   ].filter(Boolean) as { rotulo: string; valor: string }[];
 

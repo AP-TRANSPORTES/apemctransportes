@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EMPRESA, linkWhatsApp, mensagemCandidatura } from "./empresa";
+import { EMPRESA, cnpjDa, linkWhatsApp, mensagemCandidatura } from "./empresa";
 
 describe("contato via WhatsApp", () => {
   it("abre o WhatsApp da equipe no número (82) 99999-2245", () => {
@@ -27,5 +27,18 @@ describe("contato via WhatsApp", () => {
     expect(sem).not.toContain("Mensagem:");
     const com = mensagemCandidatura({ nome: "Ana", telefone: "1", funcao: "Administrativo", mensagem: "Tenho CNH E" });
     expect(com).toContain("Mensagem: Tenho CNH E");
+  });
+
+  it("cada empresa mostra o CNPJ informado", () => {
+    expect(cnpjDa("AP Transportes")).toBe("10.459.153/0001-55");
+    expect(cnpjDa("MC Transportes")).toBe("35.796.963/0001-28");
+    expect(cnpjDa("VP Transportes")).toBe("50.311.022/0001-40");
+    expect(cnpjDa("Elizabete Transportes")).toBe("48.336.573/0001-17");
+  });
+
+  it("a razão social da Elizabete é Elizabete Transportes LTDA - EPP", () => {
+    expect(EMPRESA.cnpjs.find((c) => c.empresa === "Elizabete Transportes")?.razaoSocial).toBe(
+      "Elizabete Transportes LTDA - EPP",
+    );
   });
 });

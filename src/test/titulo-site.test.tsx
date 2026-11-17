@@ -17,4 +17,10 @@ describe("título e descrição do site", () => {
     const descricao = meta.find((m) => m.name === "description")?.content ?? "";
     expect(descricao).toContain("Alagoas, Pernambuco e Paraíba");
   });
+
+  it("a prévia do link no WhatsApp usa a foto do caminhão", () => {
+    const og = meta.find((m) => m.property === "og:image")?.content;
+    expect(og).toBe("https://apemctransportes.lovable.app/previa-caminhao-glp.jpg");
+    expect(meta.find((m) => m.name === "twitter:image")?.content).toBe(og);
+  });
 });

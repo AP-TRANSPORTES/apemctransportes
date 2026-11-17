@@ -15,5 +15,7 @@
 - [x] Trocar foto do início pelo caminhão prateado (sem placas)
 - [x] Logos Copagaz, Copa Energia e Supergasbras ("Prestamos serviços para")
 - [ ] Publicar a versão nova (mapa, e-mail, crédito, fotos, título, base PB, clientes) — usuário publica pelo botão Publicar
-- [ ] Adicionar CNPJ, nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
+- [x] CNPJs das quatro empresas e razão social da Elizabete
+- [x] Foto do caminhão na prévia do link no WhatsApp
+- [ ] Adicionar nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente
