@@ -14,9 +14,15 @@ describe("contato via WhatsApp", () => {
     expect(EMPRESA.criadorSite).toBe("Rhuan Marcos");
   });
 
-  it("o site cita as quatro empresas, incluindo a VP", () => {
-    expect(EMPRESA.nomes).toContain("VP Transportes");
-    expect(EMPRESA.marcaCurta).toContain("VP");
+  it("o site cita só AP, MC e Elizabete — a VP saiu", () => {
+    expect(EMPRESA.nomes).toEqual(["AP Transportes", "MC Transportes", "Elizabete Transportes"]);
+    expect(EMPRESA.marcaCurta).not.toContain("VP");
+    expect(cnpjDa("VP Transportes")).toBeUndefined();
+  });
+
+  it("a triagem dos vasilhames é no pátio da SULOG", () => {
+    expect(EMPRESA.triagem.nome).toContain("SULOG");
+    expect(EMPRESA.triagem.mapa).toBe("https://maps.app.goo.gl/6d2c9Nwa3L8MuShJ9");
   });
 
   it("a candidatura envia nome, telefone e função; mensagem só quando preenchida", () => {
@@ -32,7 +38,6 @@ describe("contato via WhatsApp", () => {
   it("cada empresa mostra o CNPJ informado", () => {
     expect(cnpjDa("AP Transportes")).toBe("10.459.153/0001-55");
     expect(cnpjDa("MC Transportes")).toBe("35.796.963/0001-28");
-    expect(cnpjDa("VP Transportes")).toBe("50.311.022/0001-40");
     expect(cnpjDa("Elizabete Transportes")).toBe("48.336.573/0001-17");
   });
 

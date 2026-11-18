@@ -17,12 +17,6 @@ const EMPRESAS = [
     texto: "Base em Maceió, com foco em eficiência e responsabilidade no transporte e na logística de GLP em Alagoas.",
   },
   {
-    nome: "VP Transportes",
-    logo: LOGOS.vp,
-    base: "Operação conjunta",
-    texto: "Reforça a capacidade de transporte do grupo, seguindo os mesmos padrões de segurança e atendimento.",
-  },
-  {
     nome: "Elizabete Transportes",
     logo: LOGOS.elizabete,
     base: "Operação conjunta",
@@ -36,10 +30,10 @@ export function Empresas() {
       <div className="mx-auto max-w-6xl px-4">
         <TituloSecao
           eyebrow="Nossas empresas"
-          titulo="Quatro nomes, uma operação integrada."
+          titulo="Três nomes, uma operação integrada."
           descricao="Marcas que trabalham juntas para levar GLP com segurança a Alagoas, Pernambuco e Paraíba."
         />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {EMPRESAS.map((e) => (
             <article key={e.nome} className="rounded-2xl border border-border bg-card p-6 shadow-card">
               <div className="flex h-24 items-center justify-center rounded-xl bg-secondary">

@@ -25,7 +25,7 @@ export function QuemSomos() {
           <TituloSecao
             eyebrow="Quem somos"
             titulo="Uma parceria movida por propósito e responsabilidade."
-            descricao="AP Transportes, MC Transportes, VP Transportes e Elizabete Transportes atuam juntas no transporte e nas operações logísticas de GLP. Trabalhamos com seriedade em cada etapa, valorizando a segurança, a organização e a confiança com clientes e parceiros."
+            descricao="AP Transportes, MC Transportes e Elizabete Transportes atuam juntas no transporte e nas operações logísticas de GLP. Trabalhamos com seriedade em cada etapa, valorizando a segurança, a organização e a confiança com clientes e parceiros."
           />
           <ul className="mt-8 grid grid-cols-2 gap-3">
             {VALORES.map(({ icone: Icone, rotulo }) => (

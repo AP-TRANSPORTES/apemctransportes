@@ -1,4 +1,5 @@
-import { ArrowLeftRight, ClipboardCheck, Truck, Warehouse, Check } from "lucide-react";
+import { ArrowLeftRight, ClipboardCheck, Truck, Warehouse, Check, MapPin } from "lucide-react";
+import { EMPRESA } from "@/lib/empresa";
 import { TituloSecao } from "./Secao";
 
 const SERVICOS = [
@@ -11,8 +12,9 @@ const SERVICOS = [
   {
     icone: ClipboardCheck,
     titulo: "Qualificação de vasilhames",
-    texto: "Triagem e encaminhamento de vasilhames para manter a frota de botijões segura e regular.",
+    texto: `Triagem dos vasilhames no pátio da SULOG, em Cabo de Santo Agostinho (PE), para que só botijões em boas condições voltem a circular.`,
     itens: ["Inspeção visual", "Separação de vasilhames fora de padrão", "Encaminhamento à requalificação"],
+    link: { rotulo: "Ver pátio da SULOG no mapa", href: EMPRESA.triagem.mapa },
   },
   {
     icone: Truck,
@@ -38,7 +40,7 @@ export function Servicos() {
           descricao="Do recolhimento do vasilhame à entrega na revenda, cuidamos de cada etapa da operação."
         />
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICOS.map(({ icone: Icone, titulo, texto, itens }) => (
+          {SERVICOS.map(({ icone: Icone, titulo, texto, itens, link }) => (
             <article key={titulo} className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-card">
               <span className="flex size-12 items-center justify-center rounded-xl bg-accent text-accent-foreground">
                 <Icone className="size-6" strokeWidth={2.2} />
@@ -53,6 +55,16 @@ export function Servicos() {
                   </li>
                 ))}
               </ul>
+              {link && (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:underline"
+                >
+                  <MapPin className="size-4" /> {link.rotulo}
+                </a>
+              )}
             </article>
           ))}
         </div>

@@ -18,4 +18,10 @@
 - [x] CNPJs das quatro empresas e razão social da Elizabete
 - [x] Foto do caminhão na prévia do link no WhatsApp
 - [ ] Adicionar nº de autorização ANP e horário (campos ficam ocultos até o usuário informar)
+- [x] Retirar a VP (nome, logo e CNPJ)
+- [x] Seção de monitoramento Trimble (câmeras e telemetria)
+- [x] Destacar pátio de triagem SULOG
+- [x] Corrigir texto da qualificação de vasilhames (sem "frota" para botijões)
+- [ ] Novo endereço grupoapdesouza.lovable.app (publicação pedida)
+- [ ] Confirmar se os caminhões têm sensor de fadiga (aguardando o usuário)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente

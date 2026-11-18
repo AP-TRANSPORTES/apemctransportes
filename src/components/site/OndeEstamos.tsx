@@ -1,4 +1,4 @@
-import { MapPin, Mail, ExternalLink } from "lucide-react";
+import { MapPin, Mail, ExternalLink, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { EMPRESA, linkMapa } from "@/lib/empresa";
 import { TituloSecao } from "./Secao";
@@ -61,6 +61,25 @@ export function OndeEstamos() {
             </article>
           ))}
         </div>
+        <article className="mt-4 flex flex-col gap-5 rounded-2xl bg-hero p-6 text-navy-foreground shadow-card md:flex-row md:items-center md:justify-between">
+          <div className="flex items-start gap-4">
+            <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+              <ClipboardCheck className="size-5" />
+            </span>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wider text-primary">Local de triagem</p>
+              <h3 className="mt-1 text-lg font-bold">{EMPRESA.triagem.nome}</h3>
+              <p className="mt-1 text-sm text-navy-muted">
+                {EMPRESA.triagem.local} — onde é feita a triagem e a qualificação dos vasilhames.
+              </p>
+            </div>
+          </div>
+          <Button asChild variant="hero" className="self-start md:self-center">
+            <a href={EMPRESA.triagem.mapa} target="_blank" rel="noreferrer">
+              Ver no mapa <ExternalLink />
+            </a>
+          </Button>
+        </article>
         <div className="mt-4 flex items-start gap-4 rounded-2xl border border-dashed border-input bg-card/60 p-5">
           <Mail className="mt-0.5 size-5 shrink-0 text-primary" />
           <p className="text-sm text-muted-foreground">

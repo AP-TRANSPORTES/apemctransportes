@@ -5,7 +5,7 @@ import { TituloSecao } from "./Secao";
 
 // Estados atendidos pelo grupo; os demais aparecem só como referência, em cinza.
 const ATENDIDOS = {
-  PE: { nome: "Pernambuco", detalhe: "Base da AP em Vicência", cor: "var(--primary)" },
+  PE: { nome: "Pernambuco", detalhe: "Base da AP em Vicência e pátio de triagem SULOG", cor: "var(--primary)" },
   AL: { nome: "Alagoas", detalhe: "Base da MC em Maceió", cor: "color-mix(in oklab, var(--primary) 78%, var(--navy-deep))" },
   PB: { nome: "Paraíba", detalhe: "Base em Campina Grande", cor: "color-mix(in oklab, var(--primary) 70%, var(--primary-foreground))" },
 } as const;
@@ -16,6 +16,9 @@ const BASES = [
   { id: "vicencia", nome: "Vicência" },
   { id: "campina-grande", nome: "Campina Grande" },
 ] as const;
+
+// Pátio de triagem SULOG (Cabo de Santo Agostinho/PE), posicionado pela mesma escala das bases.
+const TRIAGEM = { nome: "SULOG", x: 695.9, y: 310.6 };
 
 function MapaZoom() {
   return (
@@ -91,6 +94,19 @@ function MapaZoom() {
           </g>
         );
       })}
+      <g>
+        <rect x={TRIAGEM.x - 7} y={TRIAGEM.y - 7} width={14} height={14} rx={2} className="fill-primary stroke-card" strokeWidth={2.5} />
+        <text
+          x={TRIAGEM.x + 14}
+          y={TRIAGEM.y + 5}
+          className="fill-navy-deep text-[18px] font-bold"
+          paintOrder="stroke"
+          stroke="var(--card)"
+          strokeWidth={4}
+        >
+          {TRIAGEM.nome}
+        </text>
+      </g>
     </svg>
   );
 }
@@ -152,9 +168,14 @@ export function Abrangencia() {
             <MapaBrasil />
             <p className="mt-1 text-center text-[0.6rem] font-bold uppercase tracking-wider text-muted-foreground">Brasil</p>
           </div>
-          <p className="mt-2 flex items-center justify-end gap-1.5 text-xs font-semibold text-muted-foreground">
-            <MapPin className="size-3.5 text-navy" /> Bases operacionais
-          </p>
+          <div className="mt-2 flex flex-wrap items-center justify-end gap-x-4 gap-y-1 text-xs font-semibold text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <MapPin className="size-3.5 text-navy" /> Bases operacionais
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="size-2.5 rounded-[2px] bg-primary" /> Pátio de triagem (SULOG)
+            </span>
+          </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 // Dados oficiais do grupo. Campos null ficam ocultos no site até serem informados.
 export const EMPRESA = {
-  nomes: ["AP Transportes", "MC Transportes", "VP Transportes", "Elizabete Transportes"],
-  marcaCurta: "AP • MC • VP • Elizabete",
+  nomes: ["AP Transportes", "MC Transportes", "Elizabete Transportes"],
+  marcaCurta: "AP • MC • Elizabete",
   direcao: "Maria Cristina e Antonio Pereira",
   whatsapp: "5582999992245",
   telefoneExibicao: "(82) 99999-2245",
@@ -10,12 +10,17 @@ export const EMPRESA = {
   cnpjs: [
     { empresa: "AP Transportes", cnpj: "10.459.153/0001-55" },
     { empresa: "MC Transportes", cnpj: "35.796.963/0001-28" },
-    { empresa: "VP Transportes", cnpj: "50.311.022/0001-40" },
     { empresa: "Elizabete Transportes", razaoSocial: "Elizabete Transportes LTDA - EPP", cnpj: "48.336.573/0001-17" },
   ] as { empresa: string; razaoSocial?: string; cnpj: string }[],
   autorizacaoAnp: null as string | null,
   criadorSite: "Rhuan Marcos",
   razaoSocial: "Transportadora A. P. A P de Souza Transportes LTDA",
+  // Pátio onde é feita a triagem dos vasilhames
+  triagem: {
+    nome: "SULOG — Pátio de Triagem",
+    local: "Rodovia PE-009 • Cabo de Santo Agostinho • PE",
+    mapa: "https://maps.app.goo.gl/6d2c9Nwa3L8MuShJ9",
+  },
 };
 
 export function linkWhatsApp(mensagem?: string): string {

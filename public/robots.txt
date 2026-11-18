@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://apemctransportes.lovable.app/sitemap.xml
+Sitemap: https://grupoapdesouza.lovable.app/sitemap.xml

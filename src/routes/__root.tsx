@@ -82,9 +82,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AP • MC • VP • Elizabete | Transporte de GLP" },
+      { title: "AP • MC • Elizabete | Transporte de GLP" },
       { name: "description", content: "Transporte e logística de GLP em Alagoas, Pernambuco e Paraíba." },
-      { property: "og:title", content: "AP • MC • VP • Elizabete | Transporte de GLP" },
+      { property: "og:title", content: "AP • MC • Elizabete | Transporte de GLP" },
       { property: "og:description", content: "Transporte e logística de GLP em Alagoas, Pernambuco e Paraíba." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

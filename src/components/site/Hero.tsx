@@ -4,7 +4,7 @@ import caminhao from "@/assets/caminhao-prata-glp.jpg";
 import { LOGOS } from "@/lib/logos";
 
 const NUMEROS = [
-  { valor: "4", rotulo: "empresas integradas" },
+  { valor: "3", rotulo: "empresas integradas" },
   { valor: "3", rotulo: "bases operacionais" },
   { valor: "AL, PE e PB", rotulo: "estados atendidos" },
   { valor: "4", rotulo: "serviços em GLP" },
@@ -43,11 +43,10 @@ export function Hero() {
             height={720}
             className="aspect-[4/3] w-full rounded-2xl object-cover shadow-2xl"
           />
-          <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-4 items-center gap-2 rounded-xl bg-card p-3 shadow-card sm:left-8 sm:right-8">
+          <div className="absolute -bottom-6 left-4 right-4 grid grid-cols-3 items-center gap-2 rounded-xl bg-card p-3 shadow-card sm:left-8 sm:right-8">
             {[
               { src: LOGOS.ap, alt: "AP Transportes" },
               { src: LOGOS.mc, alt: "MC Transportes" },
-              { src: LOGOS.vp, alt: "VP Transportes" },
               { src: LOGOS.elizabete, alt: "Elizabete Transportes" },
             ].map((l) => (
               <img key={l.alt} src={l.src} alt={`Logo da ${l.alt}`} className="mx-auto h-12 w-full object-contain md:h-14" />
