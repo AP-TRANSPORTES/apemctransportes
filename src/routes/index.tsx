@@ -17,7 +17,7 @@ const TITULO = "AP • MC • Elizabete | Transporte e logística de GLP em Alag
 const DESCRICAO =
   "AP, MC e Elizabete Transportes: destroca e qualificação de vasilhames, distribuição e transferência de GLP em Alagoas, Pernambuco e Paraíba, com caminhões monitorados por câmeras e telemetria.";
 // Prévia ao compartilhar o link (WhatsApp etc.): foto do caminhão prateado, sem placas, 1200x630.
-const IMAGEM_PREVIA = "https://grupoapdesouza.lovable.app/previa-caminhao-glp.jpg";
+const IMAGEM_PREVIA = "https://apemctransportes.lovable.app/previa-caminhao-glp.jpg";
 
 export const Route = createFileRoute("/")({
   staticData: { sitemap: true },
