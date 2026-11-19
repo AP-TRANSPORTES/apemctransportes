@@ -22,6 +22,6 @@
 - [x] Seção de monitoramento Trimble (câmeras e telemetria)
 - [x] Destacar pátio de triagem SULOG
 - [x] Corrigir texto da qualificação de vasilhames (sem "frota" para botijões)
-- [x] Novo endereço grupoapdesouza.lovable.app — publicado
+- [x] Endereço do site voltou para apemctransportes.lovable.app (grupoapdesouza desativado)
 - [ ] Confirmar se os caminhões têm sensor de fadiga (aguardando o usuário)
 - [ ] Rodar nova checagem de segurança antes de compartilhar o link amplamente
